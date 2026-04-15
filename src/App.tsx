@@ -6,10 +6,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Landing from "./pages/Landing";
 import DashboardLayout from "./components/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
+import MenuItems from "./pages/MenuItems";
+import Orders from "./pages/Orders";
+import Clients from "./pages/Clients";
+import Employees from "./pages/Employees";
+import KitchenPage from "./pages/Kitchen";
+import Managers from "./pages/Managers";
 import PaymentsPage from "./pages/Payments";
 import Reports from "./pages/Reports";
-import PlaceholderPage from "./pages/PlaceholderPage";
-import MenuItems from "./pages/MenuItems";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,11 +29,11 @@ const App = () => (
           <Route element={<DashboardLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/menu" element={<MenuItems />} />
-            <Route path="/orders" element={<PlaceholderPage title="Orders" />} />
-            <Route path="/clients" element={<PlaceholderPage title="Clients" />} />
-            <Route path="/employees" element={<PlaceholderPage title="Employees" />} />
-            <Route path="/kitchen" element={<PlaceholderPage title="Kitchen" />} />
-            <Route path="/managers" element={<PlaceholderPage title="Managers" />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/employees" element={<Employees />} />
+            <Route path="/kitchen" element={<KitchenPage />} />
+            <Route path="/managers" element={<Managers />} />
             <Route path="/payments" element={<PaymentsPage />} />
             <Route path="/reports" element={<Reports />} />
           </Route>
