@@ -62,7 +62,7 @@ const Landing = () => {
               Enter Dashboard <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" className="text-base px-8 py-6 rounded-xl font-body font-semibold border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground transition-all">
+          <Button asChild variant="outline" size="lg" className="text-base px-8 py-6 rounded-xl font-body font-semibold border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm transition-all">
             <Link to="/reports">
               <BarChart3 className="mr-2 h-5 w-5" /> View Reports
             </Link>
