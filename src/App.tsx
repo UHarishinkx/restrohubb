@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import PaymentsPage from "./pages/Payments";
 import Reports from "./pages/Reports";
 import PlaceholderPage from "./pages/PlaceholderPage";
+import MenuItems from "./pages/MenuItems";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
