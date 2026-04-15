@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import PaymentsPage from "./pages/Payments";
 import Reports from "./pages/Reports";
 import PlaceholderPage from "./pages/PlaceholderPage";
+import MenuItems from "./pages/MenuItems";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,7 +24,7 @@ const App = () => (
           <Route path="/" element={<Landing />} />
           <Route element={<DashboardLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/menu" element={<PlaceholderPage title="Menu Items" />} />
+            <Route path="/menu" element={<MenuItems />} />
             <Route path="/orders" element={<PlaceholderPage title="Orders" />} />
             <Route path="/clients" element={<PlaceholderPage title="Clients" />} />
             <Route path="/employees" element={<PlaceholderPage title="Employees" />} />
